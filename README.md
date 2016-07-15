@@ -6,3 +6,4 @@ Orijinal word2vec modülünde aslında word2phrase() bir metod halinde bulunuyor
 
 word2phrase kodları https://github.com/travisbrady/word2phrase adresinden alınmıştır.
 
+Bu tür çalışmalardan derlemtr: https://github.com/ahmetax/derlemtr projesinde de yararlanılacaktır.
