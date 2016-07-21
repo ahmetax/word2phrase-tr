@@ -48,6 +48,8 @@ def learn_vocab_from_train_iter(train_iter):
     vocab = defaultdict(int)
     train_words = 0
     for line in train_iter:
+        if line == []:            # adjacent empty lines breaks the loop and vocab becomes empty (ahmet aksoy 2016.07.21)
+          continue
         for pair in pairwise(line):
             vocab[pair[0]] += 1
             if None not in pair:
